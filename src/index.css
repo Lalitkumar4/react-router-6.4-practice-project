@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+:root {
+  --primary: #5e8ef9;
+  --secondary: rgba(255, 255, 255, 0.9);
+  --text-color: #333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #f4f4f4;
+  color: var(--text-color);
+}
+
+/* Navbar */
+header nav {
+  background: var(--primary);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+header nav h1 {
+  margin-right: auto;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+header nav > a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+header nav a.active {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Page content */
+main {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Help layout */
+.help-layout nav {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  gap: 30px;
+}
+
+.help-layout nav a {
+  padding: 10px 20px;
+  border: 2px solid var(--primary);
+  border-radius: 25px;
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.help-layout nav a:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+.help-layout nav a.active {
+  background: var(--primary);
+  color: #fff;
+}
+
+/* FAQ */
+.faq .question {
+  background: var(--secondary);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact form */
+form {
+  margin-top: 30px;
+  background: var(--secondary);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form label span {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* button */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: var(--primary);
+  color: #fff;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #4b6bd0;
+}
+
+/* Careers list */
+.careers > a {
+  display: block;
+  background: var(--secondary);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+  color: var(--text-color);
+  text-decoration: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.careers > a:hover p {
+  color: var(--primary);
+}
+
+.careers p {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.careers > a p:last-child {
+  color: #999;
+}
+
+/* Careers details */
+.career-details {
+  background: var(--secondary);
+  padding: 30px;
+  border-radius: 10px;
+  margin: 20px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+  font-size: 1.3rem;
+}
+
+.breadcrumbs > * {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.breadcrumbs .crumb:last-child a.active {
+  color: var(--primary);
+}
+
+.breadcrumbs .crumb:after {
+  content: ">";
+  margin-left: 10px;
+}
+
+.breadcrumbs .crumb:last-child:after {
+  display: none;
+}
+
+.breadcrumbs .crumb a {
+  color: #181818;
+}
+
+/* media query */
+@media (max-width: 600px) {
+  header nav {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  header nav h1 {
+    margin: auto;
+  }
+}
