@@ -1,4 +1,4 @@
-# JobRouter (React Router 6.4)
+# JobRouter (React Router v6.4)
 
 This project is a practice project of React Router v6.4
 
